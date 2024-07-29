@@ -1,0 +1,92 @@
+/* src/LoginPage.css */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-width: max-content;
+    background: linear-gradient(135deg, #ff956b, #f7ca15);
+  }
+  .toran-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1; /* Ensure it is above other elements */
+  /* Adjust as needed */
+}
+
+  .login-box {
+    background: rgba(193, 107, 46, 0);
+    backdrop-filter: blur(10px);
+    margin-top: 8rem;
+    padding: 2rem;
+    border-radius: 8px;
+    color: rgb(26, 122, 36);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width:400px;
+    text-align: center;
+    border: 2px solid rgb(108, 164, 11);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  @keyframes hoverAnimation {
+    0%, 100% {
+      transform: scale(1.05) ;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+      transform: scale(1.05) ;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+  }
+  
+  .login-box:hover {
+    animation: hoverAnimation 0.6s ease-in-out forwards;
+  }
+  
+  .input-group {
+    margin-bottom: 1rem;
+    margin-left: 1px;
+    border-radius: 4px;
+    display:flex;
+  }
+  
+  .input-group label {
+   
+    margin-bottom: 1rem;
+  
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #18ad3b36;
+    border: 1px solid #3ba103;
+    border-radius: 4px;
+  }
+  .ip{
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #18ad3b36;
+    border: 1px solid #3ba103;
+    border-radius: 4px;
+  }
+  button {
+    background: #f98007;
+    color: #563729;
+    padding: 0.5rem 1rem;
+    border: 1px solid #a12b03;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #c68c1080;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 0.5rem;
+  }
